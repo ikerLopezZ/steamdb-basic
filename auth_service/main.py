@@ -1,11 +1,15 @@
-from fastapi import FastAPI, Depends, HTTPException, status
-from sqlalchemy.orm import Session
-from auth_service import models, schemas, auth, database
-from fastapi.security import OAuth2PasswordRequestForm
 from dotenv import load_dotenv
 
-app = FastAPI()
 load_dotenv()  # Carga las variables de entorno del archivo .env
+
+from datetime import timedelta
+from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordRequestForm
+from sqlalchemy.orm import Session
+
+from . import auth, database, models, schemas
+
+app = FastAPI()
 
 # Crear las tablas en la base de datos
 models.Base.metadata.create_all(bind=database.engine)

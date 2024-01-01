@@ -1,12 +1,14 @@
+import os
 from datetime import datetime, timedelta
 from typing import Optional
-from jose import JWTError, jwt
-from passlib.context import CryptContext
+
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
+from jose import JWTError, jwt
+from passlib.context import CryptContext
 from sqlalchemy.orm import Session
+
 from . import models, schemas, database
-import os
 
 # Clave secreta y algoritmo para JWT
 SECRET_KEY = os.environ.get("SECRET_KEY")
