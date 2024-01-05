@@ -1,9 +1,10 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const appController = require('../controllers/appController');
+const appController = require("../controllers/appController");
+const verificarToken = require("../../auth");
 
-router.get('/apps', appController.getAllApps);
-router.get('/:appID', appController.getAppDetails);
-router.get('/search', appController.searchApps);
+router.get("/apps", verificarToken, appController.getAllApps);
+router.get("/:appID", verificarToken, appController.getAppDetails);
+router.get("/search", verificarToken, appController.searchApps);
 
 module.exports = router;

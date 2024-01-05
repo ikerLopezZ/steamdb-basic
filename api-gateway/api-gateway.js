@@ -8,9 +8,9 @@ app.use('/docs', createProxyMiddleware({ target: 'http://localhost:8000', change
 app.use('/openapi.json', createProxyMiddleware({ target: 'http://localhost:8000', changeOrigin: true }));
 
 // Enrutamiento para el microservicio de información de las apps en Node.js
-app.use('/apps', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
-app.use('/:appID', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
-app.use('/search', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
+app.use('/apps', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
+app.use('/:appID', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
+app.use('/search', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
 
 // Enrutamiento para el microservicio de autenticación en FastAPI
 app.use('/users/', createProxyMiddleware({ target: 'http://localhost:8000', changeOrigin: true }));

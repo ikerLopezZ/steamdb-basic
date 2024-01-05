@@ -6,10 +6,20 @@ from datetime import timedelta
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
+from fastapi.middleware.cors import CORSMiddleware
 
 from . import auth, database, models, schemas
 
 app = FastAPI()
+
+# Configura CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Permite solicitudes desde el origen del frontend
+    allow_credentials=True,
+    allow_methods=["*"],  # Permite todos los métodos HTTP
+    allow_headers=["*"],  # Permite todos los encabezados
+)
 
 # Crear las tablas en la base de datos
 models.Base.metadata.create_all(bind=database.engine)
