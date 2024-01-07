@@ -32,11 +32,10 @@ def get_db():
     finally:
         db.close()
 
-@app.post("/users/", response_model=schemas.UserOut)
+@app.post("/register", response_model=schemas.UserOut)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     try:
-        db_user = models.User(username=user.username, email=user.email, 
-                            hashed_password=auth.get_password_hash(user.password))
+        db_user = models.User(email=user.email, username=user.username, completeName=user.completeName, hashed_password=auth.get_password_hash(user.password))
         db.add(db_user)
         db.commit()
         db.refresh(db_user)
@@ -45,7 +44,7 @@ def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
         db.rollback()
         raise HTTPException(status_code=500, detail=f"Error al crear usuario: {e}")
 
-@app.post("/token")
+@app.post("/login")
 def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     user = auth.authenticate_user(db, form_data.username, form_data.password)
     if not user:

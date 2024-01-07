@@ -1,11 +1,12 @@
-const express = require('express');
-const appRoutes = require('./app/routes/appRoutes');
-const connectDB = require('./config/db');
-const fetchAndStoreApps = require('./services/steamService');
+const express = require("express");
+const appRoutes = require("./app/routes/appRoutes");
+const cors = require("cors"); // Añade esta línea
+const connectDB = require("./config/db");
+const fetchAndStoreApps = require("./services/steamService");
 // const path = require('path');
 // const swaggerUi = require('swagger-ui-express');
 // const YAML = require('yamljs');
-require('dotenv').config();
+require("dotenv").config();
 
 // const swaggerDocument = YAML.load(path.join(__dirname, 'openapi.yaml'));
 const app = express();
@@ -18,7 +19,14 @@ connectDB();
 fetchAndStoreApps();
 
 // Rutas de la aplicación
-app.use('/', appRoutes);
+app.use("/apps", appRoutes);
+
+// Configuración de CORS
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Asegúrate de permitir solicitudes desde el origen de tu frontend
+  })
+);
 
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

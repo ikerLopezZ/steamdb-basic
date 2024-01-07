@@ -1,20 +1,45 @@
-const express = require('express');
-const { createProxyMiddleware } = require('http-proxy-middleware');
-require('dotenv').config();
+const express = require("express");
+const { createProxyMiddleware } = require("http-proxy-middleware");
+const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 
-app.use('/docs', createProxyMiddleware({ target: 'http://localhost:8000', changeOrigin: true }));
-app.use('/openapi.json', createProxyMiddleware({ target: 'http://localhost:8000', changeOrigin: true }));
+// Configuración de CORS
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Permite solicitudes desde el origen de tu frontend
+    credentials: true, // Opcional, si necesitas enviar cookies o headers de autenticación
+  })
+);
 
-// Enrutamiento para el microservicio de información de las apps en Node.js
-app.use('/apps', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
-app.use('/:appID', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
-app.use('/search', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
+// Documentación y OpenAPI
+app.use(
+  "/docs",
+  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+);
+app.use(
+  "/openapi.json",
+  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+);
+
+// Microservicio de información de las apps en Node.js
+app.use(
+  "/apps",
+  createProxyMiddleware({ target: "http://localhost:5000", changeOrigin: true })
+);
+// app.use('/:appID', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
+// app.use('/search', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
 
 // Enrutamiento para el microservicio de autenticación en FastAPI
-app.use('/users/', createProxyMiddleware({ target: 'http://localhost:8000', changeOrigin: true }));
-app.use('/token', createProxyMiddleware({ target: 'http://localhost:8000', changeOrigin: true }));
+app.use(
+  "/register",
+  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+);
+app.use(
+  "/login",
+  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

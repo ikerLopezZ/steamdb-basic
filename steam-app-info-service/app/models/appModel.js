@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const AppSchema = new mongoose.Schema({
   appID: Number,
@@ -20,7 +20,7 @@ const AppSchema = new mongoose.Schema({
   isFreeApp: Boolean,
   installDir: String,
   reviewScore: String,
-  reviewPercentage: String
+  reviewPercentage: String,
 });
 
-module.exports = mongoose.model('App', AppSchema);
+module.exports = mongoose.model("App", AppSchema);

@@ -7,6 +7,7 @@ const RegisterForm = ({ onRegister }) => {
   const [completeName, setCompleteName] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [errorMessage, setError] = useState(""); // Agrega esta línea
 
   const handleSubmit = (event) => {
     event.preventDefault();
