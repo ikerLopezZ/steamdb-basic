@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { getAllApps, searchApps } from "../api/steamApi";
 import SearchBar from "../components/SearchBar"; // Asegúrate de tener este componente y su archivo CSS correspondiente.
-import "../styles/App.css";
+import "../styles/app.css";
 
 const AppsView = () => {
   const [apps, setApps] = useState([]);

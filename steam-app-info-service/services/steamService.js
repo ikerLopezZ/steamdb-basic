@@ -1,5 +1,5 @@
 const SteamUser = require('steam-user');
-const App = require('../app/models/appModel');
+const App = require('../src/models/appModel');
 
 // Cliente de Steam
 const client = new SteamUser();

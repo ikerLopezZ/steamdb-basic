@@ -1,5 +1,5 @@
 const express = require("express");
-const appRoutes = require("./app/routes/appRoutes");
+const appRoutes = require("./src/routes/appRoutes");
 const cors = require("cors"); // Añade esta línea
 const connectDB = require("./config/db");
 const fetchAndStoreApps = require("./services/steamService");

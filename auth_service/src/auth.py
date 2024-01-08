@@ -8,7 +8,7 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
-from . import models, schemas, database
+from . import models
 
 # Clave secreta y algoritmo para JWT
 SECRET_KEY = os.environ.get("SECRET_KEY")
@@ -36,11 +36,15 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return encoded_jwt
 
 def get_user(db: Session, username: str):
+# def get_user(db: Session, email: str):
     return db.query(models.User).filter(models.User.username == username).first()
+    # return db.query(models.User).filter(models.User.email == email).first()
 
 def authenticate_user(db: Session, username: str, password: str):
+# def authenticate_user(db: Session, email: str, password: str):
     try:
         user = get_user(db, username)
+        # user = get_user(db, email)
         if not user:
             return False
         if not verify_password(password, user.hashed_password):

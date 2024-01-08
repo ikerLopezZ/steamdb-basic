@@ -1,14 +1,17 @@
+import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Carga las variables de entorno del archivo .env
+# Carga las variables de entorno del archivo .env
+load_dotenv()
 
 from datetime import timedelta
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
-from . import auth, database, models, schemas
+from .src import auth, database, models, schemas
 
 app = FastAPI()
 
@@ -51,10 +54,18 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",
+            # detail="Incorrect email or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
     access_token_expires = timedelta(minutes=30)
     access_token = auth.create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
+        # data={"sub": user.email}, expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
+
+# Ejecución de la aplicación con Uvicorn
+if __name__ == "__main__":
+    PORT = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="127.0.0.1", port=PORT, reload=False)
+    
