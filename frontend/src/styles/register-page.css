@@ -1,0 +1,202 @@
+.regstrate {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 1.88rem;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 3.19rem;
+  flex-shrink: 0;
+}
+.group-child1,
+.group-child2,
+.group-child3,
+.group-child4,
+.group-input {
+  border: 0;
+  outline: 0;
+  font-family: Poppins;
+  font-size: 0.94rem;
+  background-color: #32353c;
+  position: absolute;
+  height: 16.28%;
+  width: 100%;
+  top: 83.72%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  padding: 0 2.75rem;
+  box-sizing: border-box;
+  color: #fff;
+}
+.group-child1,
+.group-child2,
+.group-child3,
+.group-child4 {
+  top: 62.79%;
+  bottom: 20.93%;
+}
+.group-child2,
+.group-child3,
+.group-child4 {
+  top: 41.86%;
+  bottom: 41.86%;
+}
+.group-child3,
+.group-child4 {
+  top: 20.93%;
+  bottom: 62.79%;
+}
+.group-child4 {
+  top: 0;
+  bottom: 83.72%;
+}
+.group-container {
+  align-self: stretch;
+  position: relative;
+  height: 26.88rem;
+}
+.rectangle-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 9px;
+  background-color: #1a9fff;
+  box-shadow: 0 4px 61px transparent;
+}
+.registrarse1 {
+  position: absolute;
+  height: 40.75%;
+  width: 28.73%;
+  top: 30.53%;
+  left: 35.76%;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-group {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  position: relative;
+  height: 4.16rem;
+}
+.regstrate-parent {
+  margin: 0;
+  position: absolute;
+  width: 21.82%;
+  top: calc(50% - 301px);
+  right: 20.88%;
+  left: 57.29%;
+  height: 37.63rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.69rem;
+}
+.introduciendo-tus-datos,
+.regstrate1 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-family: inherit;
+}
+.regstrate1 {
+  font-size: inherit;
+  font-weight: 600;
+}
+.introduciendo-tus-datos {
+  font-size: 2.19rem;
+  font-weight: 500;
+}
+.regstrate-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.si-ya-tienes {
+  align-self: stretch;
+  position: relative;
+}
+.span1 {
+  color: #000;
+}
+.iniciar-sesin-aqu {
+  font-weight: 600;
+  color: #1a9fff;
+}
+.puedes-iniciar-sesin-container {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  color: inherit;
+}
+.frame-group,
+.si-ya-tienes-una-cuenta-inicia-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.si-ya-tienes-una-cuenta-inicia-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 0.38rem;
+  font-size: 1rem;
+  color: #989999;
+}
+.frame-group {
+  position: absolute;
+  width: 22.76%;
+  top: calc(50% - 120px);
+  right: 57.5%;
+  left: 19.74%;
+  height: 15rem;
+  align-items: flex-end;
+  gap: 3.31rem;
+}
+.logo-combined-191a1e-2-icon1,
+.sits-01-3-icon1 {
+  position: absolute;
+  top: 1.25rem;
+  width: 11.25rem;
+  object-fit: cover;
+}
+.sits-01-3-icon1 {
+  right: 1.25rem;
+  height: 2.19rem;
+}
+.logo-combined-191a1e-2-icon1 {
+  left: 1.25rem;
+  height: 2.06rem;
+}
+.locofyregister {
+  position: relative;
+  background-color: #191a1e;
+  width: 100%;
+  height: 90rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 3.13rem;
+  color: #fff;
+  font-family: Poppins;
+}

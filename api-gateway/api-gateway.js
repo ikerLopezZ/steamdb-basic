@@ -8,7 +8,7 @@ const app = express();
 // Configuración de CORS
 app.use(
   cors({
-    origin: "http://localhost:3000", // Permite solicitudes desde el origen de tu frontend
+    origin: "http://localhost:3000", // Permite solicitudes desde el frontend
     credentials: true, // Opcional, si necesitas enviar cookies o headers de autenticación
   })
 );
@@ -23,7 +23,7 @@ app.use(
   createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
 );
 
-// Microservicio de información de las apps en Node.js
+// Enrutamiento para el microservicio steam-app-info-service
 app.use(
   "/apps",
   createProxyMiddleware({ target: "http://localhost:5000", changeOrigin: true })
@@ -31,7 +31,7 @@ app.use(
 // app.use('/:appID', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
 // app.use('/search', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
 
-// Enrutamiento para el microservicio de autenticación en FastAPI
+// Enrutamiento para el microservicio auth_service
 app.use(
   "/register",
   createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })

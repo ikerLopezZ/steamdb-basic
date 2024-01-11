@@ -1,0 +1,185 @@
+.con-tu-correo,
+.inicia-sesin {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-family: inherit;
+}
+.inicia-sesin {
+  font-size: inherit;
+  font-weight: 600;
+}
+.con-tu-correo {
+  font-size: 2.19rem;
+  font-weight: 500;
+}
+.inicia-sesin-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.si-no-tienes {
+  align-self: stretch;
+  position: relative;
+}
+.span {
+  color: #000;
+}
+.regstrarte-aqu {
+  font-weight: 600;
+  color: #1a9fff;
+}
+.frame-parent,
+.si-no-tienes-una-cuenta-regst-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.si-no-tienes-una-cuenta-regst-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 0.38rem;
+  font-size: 1rem;
+  color: #989999;
+}
+.frame-parent {
+  position: absolute;
+  width: 23.54%;
+  top: calc(50% - 120px);
+  right: 56.72%;
+  left: 19.74%;
+  height: 15rem;
+  align-items: flex-end;
+  gap: 3.31rem;
+}
+.logo-combined-191a1e-2-icon,
+.sits-01-3-icon {
+  position: absolute;
+  top: 1.25rem;
+  width: 11.25rem;
+  object-fit: cover;
+}
+.sits-01-3-icon {
+  right: 1.25rem;
+  height: 2.19rem;
+}
+.logo-combined-191a1e-2-icon {
+  left: 1.25rem;
+  height: 2.06rem;
+}
+.inicia-sesin1 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 1.88rem;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 3.19rem;
+  flex-shrink: 0;
+}
+.group-child,
+.group-item {
+  border: 0;
+  outline: 0;
+  font-family: Poppins;
+  font-size: 0.94rem;
+  background-color: #32353c;
+  position: absolute;
+  height: 43.75%;
+  width: 100%;
+  top: 56.25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  padding: 0 2.75rem;
+  box-sizing: border-box;
+  color: #fff;
+}
+.group-item {
+  top: 0;
+  bottom: 56.25%;
+}
+.group-parent,
+.has-olvidado-tu {
+  align-self: stretch;
+  position: relative;
+  height: 10rem;
+}
+.has-olvidado-tu {
+  font-size: 0.81rem;
+  font-family: Poppins;
+  color: #989999;
+  text-align: right;
+  display: inline-block;
+  height: 1.44rem;
+  flex-shrink: 0;
+}
+.group-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 9px;
+  background-color: #1a9fff;
+  box-shadow: 0 4px 61px transparent;
+}
+.registrarse {
+  position: absolute;
+  height: 40.75%;
+  width: 28.73%;
+  top: 30.53%;
+  left: 35.76%;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  position: relative;
+  height: 4.16rem;
+}
+.inicia-sesin-group {
+  margin: 0;
+  position: absolute;
+  width: 21.82%;
+  top: calc(50% - 191px);
+  right: 20.88%;
+  left: 57.29%;
+  height: 23.88rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.69rem;
+}
+.locofylogin {
+  position: relative;
+  background-color: #191a1e;
+  width: 100%;
+  height: 90rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 3.13rem;
+  color: #fff;
+  font-family: Poppins;
+}

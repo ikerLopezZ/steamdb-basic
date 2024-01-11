@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getAppDetails } from "../api/steamApi";
-import "../styles/app.css"; // Asegúrate de que este archivo de estilos exista y esté configurado correctamente.
+import { getAppDetails } from "../api/steamAppInfoService";
+import "../styles/app-page.css";
 
-const AppView = () => {
+const AppPage = () => {
   const { appID } = useParams();
   const [appDetails, setAppDetails] = useState(null);
 
@@ -51,4 +51,4 @@ const AppView = () => {
   );
 };
 
-export default AppView;
+export default AppPage;

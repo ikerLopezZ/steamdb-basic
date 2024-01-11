@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { getAllApps, searchApps } from "../api/steamApi";
-import SearchBar from "../components/SearchBar"; // Asegúrate de tener este componente y su archivo CSS correspondiente.
-import "../styles/app.css";
+import { getAllApps, searchApps } from "../api/steamAppInfoService";
+import SearchBar from "../components/SearchBar";
+import "../styles/app-page.css";
 
-const AppsView = () => {
+const AppsPage = () => {
   const [apps, setApps] = useState([]);
   const [searchParams] = useSearchParams();
   const searchTerm = searchParams.get("name"); // Obtén el término de búsqueda desde la URL.
@@ -46,4 +46,4 @@ const AppsView = () => {
   );
 };
 
-export default AppsView;
+export default AppsPage;
