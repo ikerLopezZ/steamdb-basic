@@ -1,158 +1,37 @@
 /* Estilos para Desktop (1440px) */
-.frame2-registrate {
-    margin: 0;
-    align-self: stretch;
-    position: relative;
-    font-size: 1.88rem;
-    font-weight: 500;
-    font-family: Poppins;
-    color: #fff;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    height: 3.19rem;
-    flex-shrink: 0;
-}
-
-.frame2-group1-1,
-.frame2-group1-2,
-.frame2-group1-3,
-.frame2-group1-4,
-.frame2-group1-5 {
-    border: 0;
-    outline: 0;
-    font-family: Poppins;
-    font-size: 0.94rem;
-    background-color: #32353c;
-    position: absolute;
-    height: 16.28%;
-    width: 100%;
-    top: 83.72%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 8px;
-    padding: 0 2.18rem;
-    box-sizing: border-box;
-    color: #fff;
-}
-
-.frame2-group1-1,
-.frame2-group1-2,
-.frame2-group1-3,
-.frame2-group1-4 {
-    top: 62.79%;
-    bottom: 20.93%;
-}
-
-.frame2-group1-1,
-.frame2-group1-2,
-.frame2-group1-3 {
-    top: 41.86%;
-    bottom: 41.86%;
-}
-
-.frame2-group1-1,
-.frame2-group1-2 {
-    top: 20.93%;
-    bottom: 62.79%;
-}
-
-.frame2-group1-1 {
-    top: 0;
-    bottom: 83.72%;
-}
-
-.frame2-group1 {
-    align-self: stretch;
-    position: relative;
-    height: 26.88rem;
-}
-
-.frame2-group2-rectangle {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 9px;
-    background-color: #1a9fff;
-    box-shadow: 0 4px 61px transparent;
-}
-
-.frame2-group2-registrarse {
-    position: absolute;
-    height: 40.75%;
-    width: 28.74%;
-    top: 30.53%;
-    left: 35.78%;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: Poppins;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.frame2-group2 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    align-self: stretch;
-    position: relative;
-    height: 4.16rem;
-}
-
-.frame2 {
-    margin: 0;
-    position: absolute;
-    width: 30.76%;
-    top: 13.94rem;
-    right: 17.78%;
-    left: 51.46%;
-    height: 29.88rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 1.69rem;
-}
-
-.frame1-1-introduciendo-tus-dat,
-.frame1-1-registrate {
+.frame2-1-1-text1,
+.frame2-1-1-text2 {
     margin: 0;
     align-self: stretch;
     position: relative;
     font-family: inherit;
 }
 
-.frame1-1-registrate {
+.frame2-1-1-text1 {
     font-size: inherit;
     font-weight: 600;
 }
 
-.frame1-1-introduciendo-tus-dat {
+.frame2-1-1-text2 {
     font-size: 2.19rem;
     font-weight: 500;
 }
 
-.frame1-1 {
+.frame2-1-1 {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 0.31rem;
 }
 
-.frame1-2-si-ya-tienes-una-cuen {
+.frame2-1-2-text1 {
+    margin: 0;
     align-self: stretch;
     position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
 }
 
 .span {
@@ -164,55 +43,155 @@
     color: #1a9fff;
 }
 
-.frame1-2-puedes-iniciar-sesion {
+.frame2-1-2-text2 {
     text-decoration: none;
     align-self: stretch;
     position: relative;
     color: inherit;
 }
 
-.frame1,
-.frame1-2 {
+.frame2-1,
+.frame2-1-2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
-.frame1-2 {
+.frame2-1-2 {
     align-self: stretch;
-    align-items: flex-start;
-    gap: 0.38rem;
     font-size: 1rem;
     color: #989999;
 }
 
-.frame1 {
+.frame2-1 {
+    flex: 1;
+    gap: 2.5rem;
+}
+
+.frame2-2-text {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.frame2-2-1-1,
+.frame2-2-1-1-1 {
+    align-self: stretch;
+    display: flex;
+}
+
+.frame2-2-1-1-1 {
+    border: 0;
+    outline: 0;
+    font-family: Poppins;
+    font-size: 0.94rem;
+    background-color: #32353c;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.31rem 0.63rem;
+    color: #fff;
+}
+
+.frame2-2-1-1 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.81rem;
+}
+
+.frame2-2-1-2-text {
+    flex: 1;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.81rem;
+}
+
+.frame2-2-1-2 {
+    cursor: pointer;
+    border: 0;
+    padding: 0.31rem 0;
+    background-color: #1a9fff;
+    align-self: stretch;
+    border-radius: 9px;
+    box-shadow: 0 4px 61px transparent;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.frame2-2-1 {
+    margin: 0;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.88rem;
+}
+
+.frame2,
+.frame2-2,
+.frame2-2-1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.frame2-2 {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.63rem;
+    font-size: 1.25rem;
+}
+
+.frame2 {
     position: absolute;
-    width: 29.31%;
-    top: 24.5rem;
-    right: 52.92%;
-    left: 17.78%;
-    height: 15rem;
-    align-items: flex-end;
-    gap: 3.31rem;
+    width: 77.78%;
+    top: 17.88rem;
+    right: 11.11%;
+    left: 11.11%;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.13rem;
 }
 
 .logo-combined-191a1e-icon,
 .sits-01-icon {
-    position: absolute;
-    top: 1.75rem;
+    position: relative;
+    width: 12.25rem;
     height: 2.25rem;
     object-fit: cover;
 }
 
 .sits-01-icon {
-    right: 10rem;
-    width: 11.56rem;
+    width: 11.91rem;
 }
 
-.logo-combined-191a1e-icon {
-    left: 10rem;
-    width: 12.25rem;
+.frame1 {
+    position: absolute;
+    width: 77.78%;
+    top: 1.75rem;
+    right: 11.11%;
+    left: 11.11%;
+    height: 2.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .register {
@@ -229,160 +208,40 @@
 
 /* Estilos para Tablet (991px) */
 @media screen and (max-width: 991px) {
-    .frame2-registrate {
-        margin: 0;
-        align-self: stretch;
-        position: relative;
-        font-size: 1.88rem;
-        font-weight: 500;
-        font-family: Poppins;
-        color: #fff;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        height: 3.19rem;
-        flex-shrink: 0;
-    }
 
-    .frame2-group1-1,
-    .frame2-group1-2,
-    .frame2-group1-3,
-    .frame2-group1-4,
-    .frame2-group1-5 {
-        border: 0;
-        outline: 0;
-        font-family: Poppins;
-        font-size: 0.94rem;
-        background-color: #32353c;
-        position: absolute;
-        height: 16.28%;
-        width: 100%;
-        top: 83.72%;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 8px;
-        padding: 0 1.91rem;
-        box-sizing: border-box;
-        color: #fff;
-    }
-
-    .frame2-group1-1,
-    .frame2-group1-2,
-    .frame2-group1-3,
-    .frame2-group1-4 {
-        top: 62.79%;
-        bottom: 20.93%;
-    }
-
-    .frame2-group1-1,
-    .frame2-group1-2,
-    .frame2-group1-3 {
-        top: 41.86%;
-        bottom: 41.86%;
-    }
-
-    .frame2-group1-1,
-    .frame2-group1-2 {
-        top: 20.93%;
-        bottom: 62.79%;
-    }
-
-    .frame2-group1-1 {
-        top: 0;
-        bottom: 83.72%;
-    }
-
-    .frame2-group1 {
-        align-self: stretch;
-        position: relative;
-        height: 26.88rem;
-    }
-
-    .frame2-group2-rectangle {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 9px;
-        background-color: #1a9fff;
-        box-shadow: 0 4px 61px transparent;
-    }
-
-    .frame2-group2-registrarse {
-        position: absolute;
-        height: 40.75%;
-        width: 28.73%;
-        top: 30.53%;
-        left: 35.76%;
-        font-size: 1rem;
-        font-weight: 500;
-        font-family: Poppins;
-        color: #fff;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .frame2-group2 {
-        cursor: pointer;
-        border: 0;
-        padding: 0;
-        background-color: transparent;
-        align-self: stretch;
-        position: relative;
-        height: 4.16rem;
-    }
-
-    .frame2 {
-        margin: 0;
-        position: absolute;
-        width: 39.05%;
-        top: 12.88rem;
-        right: 10.09%;
-        left: 50.86%;
-        height: 26rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 1.69rem;
-    }
-
-    .frame1-1-introduciendo-tus-dat,
-    .frame1-1-registrate {
+    .frame2-1-1-text1,
+    .frame2-1-1-text2 {
         margin: 0;
         align-self: stretch;
         position: relative;
         font-family: inherit;
     }
 
-    .frame1-1-registrate {
+    .frame2-1-1-text1 {
         font-size: inherit;
         font-weight: 600;
     }
 
-    .frame1-1-introduciendo-tus-dat {
+    .frame2-1-1-text2 {
         font-size: 2.19rem;
         font-weight: 500;
     }
 
-    .frame1-1 {
+    .frame2-1-1 {
         align-self: stretch;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 0.31rem;
     }
 
-    .frame1-2-si-ya-tienes-una-cuen {
+    .frame2-1-2-text1 {
+        margin: 0;
         align-self: stretch;
         position: relative;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: inherit;
     }
 
     .span {
@@ -394,55 +253,154 @@
         color: #1a9fff;
     }
 
-    .frame1-2-puedes-iniciar-sesion {
+    .frame2-1-2-text2 {
         text-decoration: none;
         align-self: stretch;
         position: relative;
         color: inherit;
     }
 
-    .frame1,
-    .frame1-2 {
+    .frame2-1,
+    .frame2-1-2 {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: flex-start;
     }
 
-    .frame1-2 {
+    .frame2-1-2 {
         align-self: stretch;
-        align-items: flex-start;
-        gap: 0.38rem;
         font-size: 1rem;
         color: #989999;
     }
 
-    .frame1 {
+    .frame2-1 {
+        flex: 1;
+        gap: 2.5rem;
+    }
+
+    .frame2-2-text {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-size: inherit;
+        font-weight: 500;
+        font-family: inherit;
+    }
+
+    .frame2-2-1-1,
+    .frame2-2-1-1-1 {
+        align-self: stretch;
+        display: flex;
+    }
+
+    .frame2-2-1-1-1 {
+        border: 0;
+        outline: 0;
+        font-family: Poppins;
+        font-size: 0.94rem;
+        background-color: #32353c;
+        border-radius: 8px;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.31rem 0.63rem;
+        color: #fff;
+    }
+
+    .frame2-2-1-1 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.81rem;
+    }
+
+    .frame2-2-1-2-text {
+        flex: 1;
+        position: relative;
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.81rem;
+    }
+
+    .frame2-2-1-2 {
+        cursor: pointer;
+        border: 0;
+        padding: 0.31rem 0;
+        background-color: #1a9fff;
+        align-self: stretch;
+        border-radius: 9px;
+        box-shadow: 0 4px 61px transparent;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .frame2-2-1 {
+        margin: 0;
+        align-self: stretch;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.88rem;
+    }
+
+    .frame2,
+    .frame2-2,
+    .frame2-2-1 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .frame2-2 {
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.63rem;
+        font-size: 1.25rem;
+    }
+
+    .frame2 {
         position: absolute;
-        width: 32.29%;
-        top: 26.13rem;
-        right: 57.62%;
-        left: 10.09%;
-        height: 11.75rem;
-        align-items: flex-end;
-        gap: 3.31rem;
+        width: 90.82%;
+        top: 17.88rem;
+        right: 4.54%;
+        left: 4.64%;
+        flex-direction: row;
+        align-items: center;
     }
 
     .logo-combined-191a1e-icon,
     .sits-01-icon {
-        position: absolute;
-        top: 1.75rem;
+        position: relative;
+        width: 12.25rem;
         height: 2.25rem;
         object-fit: cover;
     }
 
     .sits-01-icon {
-        right: 2rem;
-        width: 11.56rem;
+        width: 11.91rem;
     }
 
-    .logo-combined-191a1e-icon {
-        left: 2rem;
-        width: 12.25rem;
+    .frame1 {
+        position: absolute;
+        width: 89.81%;
+        top: 1.75rem;
+        right: 5.55%;
+        left: 4.64%;
+        height: 2.25rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     .register {
@@ -456,164 +414,45 @@
         color: #fff;
         font-family: Poppins;
     }
+
 }
 
-/* Estilos para Mobile (700px) */
-@media screen and (max-width: 700px) {
-    .frame2-registrate {
-        margin: 0;
-        align-self: stretch;
-        position: relative;
-        font-size: 1.88rem;
-        font-weight: 500;
-        font-family: Poppins;
-        color: #fff;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        height: 3.19rem;
-        flex-shrink: 0;
-    }
+/* Estilos para Mobile (478px) */
+@media screen and (max-width: 478px) {
 
-    .frame2-group1-1,
-    .frame2-group1-2,
-    .frame2-group1-3,
-    .frame2-group1-4,
-    .frame2-group1-5 {
-        border: 0;
-        outline: 0;
-        font-family: Poppins;
-        font-size: 0.94rem;
-        background-color: #32353c;
-        position: absolute;
-        height: 16.28%;
-        width: 100%;
-        top: 83.72%;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 8px;
-        padding: 0 1.91rem;
-        box-sizing: border-box;
-        color: #fff;
-    }
-
-    .frame2-group1-1,
-    .frame2-group1-2,
-    .frame2-group1-3,
-    .frame2-group1-4 {
-        top: 62.79%;
-        bottom: 20.93%;
-    }
-
-    .frame2-group1-1,
-    .frame2-group1-2,
-    .frame2-group1-3 {
-        top: 41.86%;
-        bottom: 41.86%;
-    }
-
-    .frame2-group1-1,
-    .frame2-group1-2 {
-        top: 20.93%;
-        bottom: 62.79%;
-    }
-
-    .frame2-group1-1 {
-        top: 0;
-        bottom: 83.72%;
-    }
-
-    .frame2-group1 {
-        align-self: stretch;
-        position: relative;
-        height: 26.88rem;
-    }
-
-    .frame2-group2-rectangle {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 9px;
-        background-color: #1a9fff;
-        box-shadow: 0 4px 61px transparent;
-    }
-
-    .frame2-group2-registrarse {
-        position: absolute;
-        height: 40.75%;
-        width: 28.74%;
-        top: 30.53%;
-        left: 35.77%;
-        font-size: 1rem;
-        font-weight: 500;
-        font-family: Poppins;
-        color: #fff;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .frame2-group2 {
-        cursor: pointer;
-        border: 0;
-        padding: 0;
-        background-color: transparent;
-        align-self: stretch;
-        position: relative;
-        height: 4.16rem;
-    }
-
-    .frame2 {
-        margin: 0;
-        position: absolute;
-        width: 81.17%;
-        top: 31.63rem;
-        right: 9.41%;
-        left: 9.41%;
-        height: 26.06rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 1.69rem;
-    }
-
-    .frame1-1-introduciendo-tus-dat,
-    .frame1-1-registrate {
+    .frame2-1-1-text1,
+    .frame2-1-1-text2 {
         margin: 0;
         align-self: stretch;
         position: relative;
         font-family: inherit;
     }
 
-    .frame1-1-registrate {
+    .frame2-1-1-text1 {
         font-size: inherit;
         font-weight: 600;
     }
 
-    .frame1-1-introduciendo-tus-dat {
+    .frame2-1-1-text2 {
         font-size: 2.19rem;
         font-weight: 500;
     }
 
-    .frame1-1 {
+    .frame2-1-1 {
         align-self: stretch;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 0.31rem;
     }
 
-    .frame1-2-si-ya-tienes-una-cuen {
+    .frame2-1-2-text1 {
+        margin: 0;
         align-self: stretch;
         position: relative;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: inherit;
     }
 
     .span {
@@ -625,62 +464,162 @@
         color: #1a9fff;
     }
 
-    .frame1-2-puedes-iniciar-sesion {
+    .frame2-1-2-text2 {
         text-decoration: none;
         align-self: stretch;
         position: relative;
         color: inherit;
     }
 
-    .frame1,
-    .frame1-2 {
+    .frame2-1,
+    .frame2-1-2 {
+        align-self: stretch;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: flex-start;
     }
 
-    .frame1-2 {
-        align-self: stretch;
-        align-items: flex-start;
-        gap: 0.38rem;
+    .frame2-1-2 {
         font-size: 1rem;
         color: #989999;
     }
 
-    .frame1 {
+    .frame2-1 {
+        gap: 2.5rem;
+    }
+
+    .frame2-2-text {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-size: inherit;
+        font-weight: 500;
+        font-family: inherit;
+    }
+
+    .frame2-2-1-1,
+    .frame2-2-1-1-1 {
+        align-self: stretch;
+        display: flex;
+    }
+
+    .frame2-2-1-1-1 {
+        border: 0;
+        outline: 0;
+        font-family: Poppins;
+        font-size: 0.94rem;
+        background-color: #32353c;
+        border-radius: 8px;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.31rem 0.63rem;
+        color: #fff;
+    }
+
+    .frame2-2-1-1 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.81rem;
+    }
+
+    .frame2-2-1-2-text {
+        flex: 1;
+        position: relative;
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.81rem;
+    }
+
+    .frame2-2-1,
+    .frame2-2-1-2 {
+        align-self: stretch;
+        justify-content: flex-start;
+    }
+
+    .frame2-2-1-2 {
+        cursor: pointer;
+        border: 0;
+        padding: 0.31rem 0;
+        background-color: #1a9fff;
+        border-radius: 9px;
+        box-shadow: 0 4px 61px transparent;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .frame2-2-1 {
+        margin: 0;
+        gap: 1.88rem;
+    }
+
+    .frame2,
+    .frame2-2,
+    .frame2-2-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .frame2-2 {
+        align-self: stretch;
+        justify-content: flex-start;
+        gap: 0.63rem;
+        text-align: left;
+        font-size: 1.25rem;
+    }
+
+    .frame2 {
         position: absolute;
-        width: 81.17%;
-        top: 7.69rem;
-        right: 9.41%;
-        left: 9.41%;
-        height: 13.81rem;
-        align-items: flex-end;
-        gap: 3.31rem;
+        width: 77.78%;
+        top: 7.94rem;
+        right: 11.13%;
+        left: 11.09%;
+        justify-content: center;
+        gap: 3.13rem;
     }
 
     .logo-combined-191a1e-icon,
     .sits-01-icon {
-        position: absolute;
-        top: 1.75rem;
-        height: 2.25rem;
+        position: relative;
+        width: 7.5rem;
+        height: 1.38rem;
         object-fit: cover;
     }
 
     .sits-01-icon {
-        right: 1rem;
-        width: 11.56rem;
+        width: 7.44rem;
     }
 
-    .logo-combined-191a1e-icon {
-        left: 1rem;
-        width: 12.25rem;
+    .frame1 {
+        position: absolute;
+        width: 77.82%;
+        top: 1.75rem;
+        right: 11.09%;
+        left: 11.09%;
+        height: 1.38rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     .register {
         position: relative;
         background-color: #191a1e;
         width: 100%;
-        height: 80.94rem;
+        height: 64rem;
         overflow: hidden;
         text-align: center;
         font-size: 3.13rem;
