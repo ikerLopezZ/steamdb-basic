@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { authService } from "../api/authService";
-import "../styles/login-page.css";
+import styles from "../styles/login-page.module.css";
 
 const LoginPage = () => {
   // Estados para el formulario de inicio de sesión
@@ -40,33 +40,33 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login">
-      <div className="frame2">
-        <div className="frame2-1">
-          <div className="frame2-1-1">
-            <h1 className="frame2-1-1-text1">Inicia sesión</h1>
-            <h1 className="frame2-1-1-text2">con tu nombre de usuario</h1>
+    <div className={styles.login}>
+      <div className={styles.frame2}>
+        <div className={styles["frame2-1"]}>
+          <div className={styles["frame2-1-1"]}>
+            <h1 className={styles["frame2-1-1-text1"]}>Inicia sesión</h1>
+            <h1 className={styles["frame2-1-1-text2"]}>con tu nombre de usuario</h1>
           </div>
-          <div className="frame2-1-2">
-            <h1 className="frame2-1-2-text1">
+          <div className={styles["frame2-1-2"]}>
+            <h1 className={styles["frame2-1-2-text1"]}>
               Si no tienes una cuenta regístrate
             </h1>
-            <a className="frame2-1-2-text2" onClick={handleNavigate}>
+            <a className={styles["frame2-1-2-text2"]} onClick={handleNavigate}>
               <span>
                 <span>¡Puedes</span>
-                <span className="span">{` `}</span>
+                <span className={styles.span}>{` `}</span>
               </span>
-              <span className="registrarte-aqu">registrarte aquí!</span>
+              <span className={styles["registrarte-aqu"]}>registrarte aquí!</span>
             </a>
           </div>
         </div>
-        <div className="frame2-2">
-          <h1 className="frame2-2-text">Inicia sesión</h1>
+        <div className={styles["frame2-2"]}>
+          <h1 className={styles["frame2-2-text"]}>Inicia sesión</h1>
           {/* Formulario de inicio de sesión */}
-          <form className="frame2-2-1" onSubmit={handleSubmit}>
-            <div className="frame2-2-1-1">
+          <form className={styles["frame2-2-1"]} onSubmit={handleSubmit}>
+            <div className={styles["frame2-2-1-1"]}>
               <input
-                className="frame2-2-1-1-1"
+                className={styles["frame2-2-1-1-1"]}
                 placeholder="Nombre de usuario"
                 type="text"
                 value={username}
@@ -80,33 +80,33 @@ const LoginPage = () => {
             onChange={(event) => setGroupInput1Value(event.target.value)}
 />*/}
               <input
-                className="frame2-2-1-1-1"
+                className={styles["frame2-2-1-1-1"]}
                 placeholder="Contraseña"
                 type="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
               />
             </div>
-            <button className="frame2-2-1-2">
-              <div className="frame2-2-1-2-text">Iniciar sesión</div>
+            <button className={styles["frame2-2-1-2"]}>
+              <div className={styles["frame2-2-1-2-text"]}>Iniciar sesión</div>
             </button>
             {/* Mensajes de error o éxito */}
             {errorMessage && (
-              <div className="error-message">{errorMessage}</div>
+              <div className={styles["error-message"]}>{errorMessage}</div>
             )}
             {successMessage && (
-              <div className="success-message">{successMessage}</div>
+              <div className={styles["success-message"]}>{successMessage}</div>
             )}
           </form>
         </div>
       </div>
-      <div className="frame1">
+      <div className={styles.frame1}>
         <img
-          className="logo-combined-191a1e-icon"
+          className={styles["logo-combined-191a1e-icon"]}
           alt=""
           src="/logo-combined-191a1e@2x.png"
         />
-        <img className="sits-01-icon" alt="" src="/sits-01@2x.png" />
+        <img className={styles["sits-01-icon"]} alt="" src="/sits-01@2x.png" />
       </div>
     </div>
   );

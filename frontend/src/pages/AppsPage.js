@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAllApps } from "../api/steamAppInfoService";
 import "../styles/apps-page.css";
+// import styles from "../styles/apps-page.module.css";
 
 const AppsPage = () => {
   const [apps, setApps] = useState([]);
