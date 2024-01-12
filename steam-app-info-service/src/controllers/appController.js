@@ -24,7 +24,7 @@ exports.getAppDetails = async (req, res) => {
   }
 };
 
-exports.searchApps = async (req, res) => {
+/*exports.searchApps = async (req, res) => {
   try {
     const searchTerm = req.query.name;
     const regex = new RegExp(searchTerm, "i");
@@ -34,4 +34,4 @@ exports.searchApps = async (req, res) => {
   } catch (error) {
     res.status(500).send("Error en la búsqueda de apps");
   }
-};
+};*/

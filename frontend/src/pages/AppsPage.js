@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Link, useSearchParams } from "react-router-dom";
-import { getAllApps, searchApps } from "../api/steamAppInfoService";
-import SearchBar from "../components/SearchBar";
-import "../styles/app-page.css";
+import { Link } from "react-router-dom";
+import { getAllApps } from "../api/steamAppInfoService";
+import "../styles/apps-page.css";
 
 const AppsPage = () => {
   const [apps, setApps] = useState([]);
-  const [searchParams] = useSearchParams();
-  const searchTerm = searchParams.get("name"); // Obtén el término de búsqueda desde la URL.
 
   useEffect(() => {
     const fetchApps = async () => {
       try {
-        // Determina si debes buscar todas las apps o realizar una búsqueda por nombre.
-        const data = searchTerm
-          ? await searchApps(searchTerm)
-          : await getAllApps();
+        const data = await getAllApps();
         setApps(data);
       } catch (error) {
         console.error("Error fetching apps:", error);
@@ -23,11 +17,10 @@ const AppsPage = () => {
     };
 
     fetchApps();
-  }, [searchTerm]); // Agrega searchTerm como dependencia del useEffect.
+  });
 
   return (
     <div className="apps-container">
-      <SearchBar /> {/* Renderiza la barra de búsqueda */}
       {apps.map((app) => (
         <div key={app.appID} className="app-entry">
           <Link to={`/apps/${app.appID}`}>

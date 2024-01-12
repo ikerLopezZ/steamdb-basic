@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./api-gateway/.env
+
+  steam-app-info-service:
+    build: ./steam-app-info-service
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./steam-app-info-service/.env
+
+  auth_service:
+    build: ./auth_service
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./auth_service/.env
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api-gateway
+      - steam-app-info-service
+      - auth_service
+      

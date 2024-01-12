@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: Steam App Info Service
+  description: Microservicio para obtener datos de aplicaciones de Steam.
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+    description: Servidor local de desarrollo
+paths:
+  /apps:
+    get:
+      summary: Lista las 100 aplicaciones mejor valoradas de Steam del año 2023
+      responses:
+        "200":
+          description: Una lista con las 100 aplicaciones
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/App"
+        "500":
+          description: Error interno del servidor al obtener las aplicaciones
+
+  /apps/{appID}:
+    get:
+      summary: Obtiene detalles de una aplicación específica de Steam
+      parameters:
+        - in: path
+          name: appID
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Detalles de la aplicación solicitada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/App"
+        "404":
+          description: Aplicación no encontrada
+        "500":
+          description: Error interno del servidor al obtener detalles de la aplicación
+components:
+  schemas:
+    App:
+      type: object
+      properties:
+        appID:
+          type: integer
+        name:
+          type: string
+        type:
+          type: string
+        osList:
+          type: string
+        clientIcon:
+          type: string
+        iconURL:
+          type: string
+        headerImage:
+          type: string
+        releaseState:
+          type: string
+        languages:
+          type: array
+          items:
+            type: string
+        controllerSupport:
+          type: string
+        primaryGenre:
+          type: string
+        genres:
+          type: array
+          items:
+            type: string
+        supportedLanguages:
+          type: array
+          items:
+            type: string
+        steamReleaseDate:
+          type: string
+        developer:
+          type: string
+        publisher:
+          type: string
+        isFreeApp:
+          type: boolean
+        installDir:
+          type: string
+        reviewScore:
+          type: string
+        reviewPercentage:
+          type: string

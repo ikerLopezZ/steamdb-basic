@@ -1,202 +1,690 @@
-.regstrate {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-size: 1.88rem;
-  font-weight: 500;
-  font-family: Poppins;
-  color: #fff;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  height: 3.19rem;
-  flex-shrink: 0;
+/* Estilos para Desktop (1440px) */
+.frame2-registrate {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 1.88rem;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 3.19rem;
+    flex-shrink: 0;
 }
-.group-child1,
-.group-child2,
-.group-child3,
-.group-child4,
-.group-input {
-  border: 0;
-  outline: 0;
-  font-family: Poppins;
-  font-size: 0.94rem;
-  background-color: #32353c;
-  position: absolute;
-  height: 16.28%;
-  width: 100%;
-  top: 83.72%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 8px;
-  padding: 0 2.75rem;
-  box-sizing: border-box;
-  color: #fff;
+
+.frame2-group1-1,
+.frame2-group1-2,
+.frame2-group1-3,
+.frame2-group1-4,
+.frame2-group1-5 {
+    border: 0;
+    outline: 0;
+    font-family: Poppins;
+    font-size: 0.94rem;
+    background-color: #32353c;
+    position: absolute;
+    height: 16.28%;
+    width: 100%;
+    top: 83.72%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    padding: 0 2.18rem;
+    box-sizing: border-box;
+    color: #fff;
 }
-.group-child1,
-.group-child2,
-.group-child3,
-.group-child4 {
-  top: 62.79%;
-  bottom: 20.93%;
+
+.frame2-group1-1,
+.frame2-group1-2,
+.frame2-group1-3,
+.frame2-group1-4 {
+    top: 62.79%;
+    bottom: 20.93%;
 }
-.group-child2,
-.group-child3,
-.group-child4 {
-  top: 41.86%;
-  bottom: 41.86%;
+
+.frame2-group1-1,
+.frame2-group1-2,
+.frame2-group1-3 {
+    top: 41.86%;
+    bottom: 41.86%;
 }
-.group-child3,
-.group-child4 {
-  top: 20.93%;
-  bottom: 62.79%;
+
+.frame2-group1-1,
+.frame2-group1-2 {
+    top: 20.93%;
+    bottom: 62.79%;
 }
-.group-child4 {
-  top: 0;
-  bottom: 83.72%;
+
+.frame2-group1-1 {
+    top: 0;
+    bottom: 83.72%;
 }
-.group-container {
-  align-self: stretch;
-  position: relative;
-  height: 26.88rem;
+
+.frame2-group1 {
+    align-self: stretch;
+    position: relative;
+    height: 26.88rem;
 }
-.rectangle-div {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 9px;
-  background-color: #1a9fff;
-  box-shadow: 0 4px 61px transparent;
+
+.frame2-group2-rectangle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 9px;
+    background-color: #1a9fff;
+    box-shadow: 0 4px 61px transparent;
 }
-.registrarse1 {
-  position: absolute;
-  height: 40.75%;
-  width: 28.73%;
-  top: 30.53%;
-  left: 35.76%;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: Poppins;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.frame2-group2-registrarse {
+    position: absolute;
+    height: 40.75%;
+    width: 28.74%;
+    top: 30.53%;
+    left: 35.78%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.rectangle-group {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  align-self: stretch;
-  position: relative;
-  height: 4.16rem;
+
+.frame2-group2 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    align-self: stretch;
+    position: relative;
+    height: 4.16rem;
 }
-.regstrate-parent {
-  margin: 0;
-  position: absolute;
-  width: 21.82%;
-  top: calc(50% - 301px);
-  right: 20.88%;
-  left: 57.29%;
-  height: 37.63rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.69rem;
+
+.frame2 {
+    margin: 0;
+    position: absolute;
+    width: 30.76%;
+    top: 13.94rem;
+    right: 17.78%;
+    left: 51.46%;
+    height: 29.88rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.69rem;
 }
-.introduciendo-tus-datos,
-.regstrate1 {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-family: inherit;
+
+.frame1-1-introduciendo-tus-dat,
+.frame1-1-registrate {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-family: inherit;
 }
-.regstrate1 {
-  font-size: inherit;
-  font-weight: 600;
+
+.frame1-1-registrate {
+    font-size: inherit;
+    font-weight: 600;
 }
-.introduciendo-tus-datos {
-  font-size: 2.19rem;
-  font-weight: 500;
+
+.frame1-1-introduciendo-tus-dat {
+    font-size: 2.19rem;
+    font-weight: 500;
 }
-.regstrate-group {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 0.31rem;
+
+.frame1-1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.31rem;
 }
-.si-ya-tienes {
-  align-self: stretch;
-  position: relative;
+
+.frame1-2-si-ya-tienes-una-cuen {
+    align-self: stretch;
+    position: relative;
 }
-.span1 {
-  color: #000;
+
+.span {
+    color: #000;
 }
+
 .iniciar-sesin-aqu {
-  font-weight: 600;
-  color: #1a9fff;
+    font-weight: 600;
+    color: #1a9fff;
 }
-.puedes-iniciar-sesin-container {
-  text-decoration: none;
-  align-self: stretch;
-  position: relative;
-  color: inherit;
+
+.frame1-2-puedes-iniciar-sesion {
+    text-decoration: none;
+    align-self: stretch;
+    position: relative;
+    color: inherit;
 }
-.frame-group,
-.si-ya-tienes-una-cuenta-inicia-parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
+.frame1,
+.frame1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-.si-ya-tienes-una-cuenta-inicia-parent {
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 0.38rem;
-  font-size: 1rem;
-  color: #989999;
+
+.frame1-2 {
+    align-self: stretch;
+    align-items: flex-start;
+    gap: 0.38rem;
+    font-size: 1rem;
+    color: #989999;
 }
-.frame-group {
-  position: absolute;
-  width: 22.76%;
-  top: calc(50% - 120px);
-  right: 57.5%;
-  left: 19.74%;
-  height: 15rem;
-  align-items: flex-end;
-  gap: 3.31rem;
+
+.frame1 {
+    position: absolute;
+    width: 29.31%;
+    top: 24.5rem;
+    right: 52.92%;
+    left: 17.78%;
+    height: 15rem;
+    align-items: flex-end;
+    gap: 3.31rem;
 }
-.logo-combined-191a1e-2-icon1,
-.sits-01-3-icon1 {
-  position: absolute;
-  top: 1.25rem;
-  width: 11.25rem;
-  object-fit: cover;
+
+.logo-combined-191a1e-icon,
+.sits-01-icon {
+    position: absolute;
+    top: 1.75rem;
+    height: 2.25rem;
+    object-fit: cover;
 }
-.sits-01-3-icon1 {
-  right: 1.25rem;
-  height: 2.19rem;
+
+.sits-01-icon {
+    right: 10rem;
+    width: 11.56rem;
 }
-.logo-combined-191a1e-2-icon1 {
-  left: 1.25rem;
-  height: 2.06rem;
+
+.logo-combined-191a1e-icon {
+    left: 10rem;
+    width: 12.25rem;
 }
-.locofyregister {
-  position: relative;
-  background-color: #191a1e;
-  width: 100%;
-  height: 90rem;
-  overflow: hidden;
-  text-align: left;
-  font-size: 3.13rem;
-  color: #fff;
-  font-family: Poppins;
+
+.register {
+    position: relative;
+    background-color: #191a1e;
+    width: 100%;
+    height: 64rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 3.13rem;
+    color: #fff;
+    font-family: Poppins;
+}
+
+/* Estilos para Tablet (991px) */
+@media screen and (max-width: 991px) {
+    .frame2-registrate {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-size: 1.88rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        height: 3.19rem;
+        flex-shrink: 0;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2,
+    .frame2-group1-3,
+    .frame2-group1-4,
+    .frame2-group1-5 {
+        border: 0;
+        outline: 0;
+        font-family: Poppins;
+        font-size: 0.94rem;
+        background-color: #32353c;
+        position: absolute;
+        height: 16.28%;
+        width: 100%;
+        top: 83.72%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        padding: 0 1.91rem;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2,
+    .frame2-group1-3,
+    .frame2-group1-4 {
+        top: 62.79%;
+        bottom: 20.93%;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2,
+    .frame2-group1-3 {
+        top: 41.86%;
+        bottom: 41.86%;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2 {
+        top: 20.93%;
+        bottom: 62.79%;
+    }
+
+    .frame2-group1-1 {
+        top: 0;
+        bottom: 83.72%;
+    }
+
+    .frame2-group1 {
+        align-self: stretch;
+        position: relative;
+        height: 26.88rem;
+    }
+
+    .frame2-group2-rectangle {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 9px;
+        background-color: #1a9fff;
+        box-shadow: 0 4px 61px transparent;
+    }
+
+    .frame2-group2-registrarse {
+        position: absolute;
+        height: 40.75%;
+        width: 28.73%;
+        top: 30.53%;
+        left: 35.76%;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frame2-group2 {
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        align-self: stretch;
+        position: relative;
+        height: 4.16rem;
+    }
+
+    .frame2 {
+        margin: 0;
+        position: absolute;
+        width: 39.05%;
+        top: 12.88rem;
+        right: 10.09%;
+        left: 50.86%;
+        height: 26rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.69rem;
+    }
+
+    .frame1-1-introduciendo-tus-dat,
+    .frame1-1-registrate {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-family: inherit;
+    }
+
+    .frame1-1-registrate {
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    .frame1-1-introduciendo-tus-dat {
+        font-size: 2.19rem;
+        font-weight: 500;
+    }
+
+    .frame1-1 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.31rem;
+    }
+
+    .frame1-2-si-ya-tienes-una-cuen {
+        align-self: stretch;
+        position: relative;
+    }
+
+    .span {
+        color: #000;
+    }
+
+    .iniciar-sesin-aqu {
+        font-weight: 600;
+        color: #1a9fff;
+    }
+
+    .frame1-2-puedes-iniciar-sesion {
+        text-decoration: none;
+        align-self: stretch;
+        position: relative;
+        color: inherit;
+    }
+
+    .frame1,
+    .frame1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .frame1-2 {
+        align-self: stretch;
+        align-items: flex-start;
+        gap: 0.38rem;
+        font-size: 1rem;
+        color: #989999;
+    }
+
+    .frame1 {
+        position: absolute;
+        width: 32.29%;
+        top: 26.13rem;
+        right: 57.62%;
+        left: 10.09%;
+        height: 11.75rem;
+        align-items: flex-end;
+        gap: 3.31rem;
+    }
+
+    .logo-combined-191a1e-icon,
+    .sits-01-icon {
+        position: absolute;
+        top: 1.75rem;
+        height: 2.25rem;
+        object-fit: cover;
+    }
+
+    .sits-01-icon {
+        right: 2rem;
+        width: 11.56rem;
+    }
+
+    .logo-combined-191a1e-icon {
+        left: 2rem;
+        width: 12.25rem;
+    }
+
+    .register {
+        position: relative;
+        background-color: #191a1e;
+        width: 100%;
+        height: 64rem;
+        overflow: hidden;
+        text-align: left;
+        font-size: 3.13rem;
+        color: #fff;
+        font-family: Poppins;
+    }
+}
+
+/* Estilos para Mobile (700px) */
+@media screen and (max-width: 700px) {
+    .frame2-registrate {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-size: 1.88rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        height: 3.19rem;
+        flex-shrink: 0;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2,
+    .frame2-group1-3,
+    .frame2-group1-4,
+    .frame2-group1-5 {
+        border: 0;
+        outline: 0;
+        font-family: Poppins;
+        font-size: 0.94rem;
+        background-color: #32353c;
+        position: absolute;
+        height: 16.28%;
+        width: 100%;
+        top: 83.72%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        padding: 0 1.91rem;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2,
+    .frame2-group1-3,
+    .frame2-group1-4 {
+        top: 62.79%;
+        bottom: 20.93%;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2,
+    .frame2-group1-3 {
+        top: 41.86%;
+        bottom: 41.86%;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2 {
+        top: 20.93%;
+        bottom: 62.79%;
+    }
+
+    .frame2-group1-1 {
+        top: 0;
+        bottom: 83.72%;
+    }
+
+    .frame2-group1 {
+        align-self: stretch;
+        position: relative;
+        height: 26.88rem;
+    }
+
+    .frame2-group2-rectangle {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 9px;
+        background-color: #1a9fff;
+        box-shadow: 0 4px 61px transparent;
+    }
+
+    .frame2-group2-registrarse {
+        position: absolute;
+        height: 40.75%;
+        width: 28.74%;
+        top: 30.53%;
+        left: 35.77%;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frame2-group2 {
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        align-self: stretch;
+        position: relative;
+        height: 4.16rem;
+    }
+
+    .frame2 {
+        margin: 0;
+        position: absolute;
+        width: 81.17%;
+        top: 31.63rem;
+        right: 9.41%;
+        left: 9.41%;
+        height: 26.06rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.69rem;
+    }
+
+    .frame1-1-introduciendo-tus-dat,
+    .frame1-1-registrate {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-family: inherit;
+    }
+
+    .frame1-1-registrate {
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    .frame1-1-introduciendo-tus-dat {
+        font-size: 2.19rem;
+        font-weight: 500;
+    }
+
+    .frame1-1 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.31rem;
+    }
+
+    .frame1-2-si-ya-tienes-una-cuen {
+        align-self: stretch;
+        position: relative;
+    }
+
+    .span {
+        color: #000;
+    }
+
+    .iniciar-sesin-aqu {
+        font-weight: 600;
+        color: #1a9fff;
+    }
+
+    .frame1-2-puedes-iniciar-sesion {
+        text-decoration: none;
+        align-self: stretch;
+        position: relative;
+        color: inherit;
+    }
+
+    .frame1,
+    .frame1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .frame1-2 {
+        align-self: stretch;
+        align-items: flex-start;
+        gap: 0.38rem;
+        font-size: 1rem;
+        color: #989999;
+    }
+
+    .frame1 {
+        position: absolute;
+        width: 81.17%;
+        top: 7.69rem;
+        right: 9.41%;
+        left: 9.41%;
+        height: 13.81rem;
+        align-items: flex-end;
+        gap: 3.31rem;
+    }
+
+    .logo-combined-191a1e-icon,
+    .sits-01-icon {
+        position: absolute;
+        top: 1.75rem;
+        height: 2.25rem;
+        object-fit: cover;
+    }
+
+    .sits-01-icon {
+        right: 1rem;
+        width: 11.56rem;
+    }
+
+    .logo-combined-191a1e-icon {
+        left: 1rem;
+        width: 12.25rem;
+    }
+
+    .register {
+        position: relative;
+        background-color: #191a1e;
+        width: 100%;
+        height: 80.94rem;
+        overflow: hidden;
+        text-align: center;
+        font-size: 3.13rem;
+        color: #fff;
+        font-family: Poppins;
+    }
 }

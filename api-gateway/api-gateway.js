@@ -5,11 +5,11 @@ require("dotenv").config();
 
 const app = express();
 
-// Configuración de CORS
+// Configuración de CORS (Cross-Origin Resource Sharing)
 app.use(
   cors({
     origin: "http://localhost:3000", // Permite solicitudes desde el frontend
-    credentials: true, // Opcional, si necesitas enviar cookies o headers de autenticación
+    credentials: true,
   })
 );
 
@@ -28,8 +28,6 @@ app.use(
   "/apps",
   createProxyMiddleware({ target: "http://localhost:5000", changeOrigin: true })
 );
-// app.use('/:appID', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
-// app.use('/search', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
 
 // Enrutamiento para el microservicio auth_service
 app.use(
@@ -40,6 +38,12 @@ app.use(
   "/login",
   createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
 );
+
+// Middleware de manejo de errores
+app.use((err, req, res, next) => {
+  console.error(err.stack); // Log del error en la consola del servidor
+  res.status(500).send("Algo salió mal"); // Respuesta para el cliente
+});
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

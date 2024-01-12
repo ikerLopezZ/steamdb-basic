@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AppsPage from "./pages/AppsPage"; // Importa AppsPage
 import AppPage from "./pages/AppPage"; // Importa AppPage
 import LoginPage from "./pages/LoginPage"; // Importa LoginPage
@@ -13,7 +13,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/apps" element={<AppsPage />} />
         <Route path="/apps/:appID" element={<AppPage />} />
-        detalles de una aplicación específica
+        <Route path="/" element={<Navigate replace to="/register" />} />
       </Routes>
     </Router>
   );

@@ -6,9 +6,12 @@ from sqlalchemy.orm import sessionmaker
 
 SQLALCHEMY_DATABASE_URL = os.environ.get("MYSQL_URI")
 
-try:
-    engine = create_engine(SQLALCHEMY_DATABASE_URL)
-    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-    Base = declarative_base()
-except Exception as e:
-    print(f"Error al conectar con la base de datos: {e}")
+if not SQLALCHEMY_DATABASE_URL:
+    raise Exception("La URL de la base de datos no está configurada en las variables de entorno")
+
+# Configuración de SQLAlchemy
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Base declarativa para modelos SQLAlchemy
+Base = declarative_base()

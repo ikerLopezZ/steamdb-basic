@@ -1,185 +1,625 @@
-.con-tu-correo,
-.inicia-sesin {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-family: inherit;
+/* Estilos para Desktop (1440px) */
+.frame2-inicia-sesion {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 1.88rem;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 3.19rem;
+    flex-shrink: 0;
 }
-.inicia-sesin {
-  font-size: inherit;
-  font-weight: 600;
+
+.frame2-group1-1,
+.frame2-group1-2 {
+    border: 0;
+    outline: 0;
+    font-family: Poppins;
+    font-size: 0.94rem;
+    background-color: #32353c;
+    position: absolute;
+    height: 43.75%;
+    width: 99.75%;
+    top: 56.25%;
+    right: 0;
+    bottom: 0;
+    left: 0.25%;
+    border-radius: 8px;
+    padding: 0 2.17rem;
+    box-sizing: border-box;
+    color: #fff;
 }
-.con-tu-correo {
-  font-size: 2.19rem;
-  font-weight: 500;
+
+.frame2-group1-1 {
+    top: 0;
+    right: 0.25%;
+    bottom: 56.25%;
+    left: 0;
 }
-.inicia-sesin-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 0.31rem;
+
+.frame2-group1 {
+    align-self: stretch;
+    position: relative;
+    height: 10rem;
 }
-.si-no-tienes {
-  align-self: stretch;
-  position: relative;
+
+.frame2-group2-rectangle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 9px;
+    background-color: #1a9fff;
+    box-shadow: 0 4px 61px transparent;
 }
+
+.frame2-group2-iniciar-sesion {
+    position: absolute;
+    height: 40.75%;
+    width: 28.74%;
+    top: 30.53%;
+    left: 35.78%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame2-group2 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    align-self: stretch;
+    position: relative;
+    height: 4.16rem;
+}
+
+.frame2 {
+    margin: 0;
+    position: absolute;
+    width: 30.76%;
+    top: 22.44rem;
+    right: 17.78%;
+    left: 51.46%;
+    height: 20.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.69rem;
+}
+
+.frame1-1-con-tu-nombre-de-usua,
+.frame1-1-inicia-sesion {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-family: inherit;
+}
+
+.frame1-1-inicia-sesion {
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.frame1-1-con-tu-nombre-de-usua {
+    font-size: 2.19rem;
+    font-weight: 500;
+}
+
+.frame1-1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.31rem;
+}
+
+.frame1-2-si-no-tienes-una-cuen {
+    align-self: stretch;
+    position: relative;
+}
+
 .span {
-  color: #000;
+    color: #000;
 }
+
 .regstrarte-aqu {
-  font-weight: 600;
-  color: #1a9fff;
+    font-weight: 600;
+    color: #1a9fff;
 }
-.frame-parent,
-.si-no-tienes-una-cuenta-regst-parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
+.frame1-2-puedes-registrarte-aq {
+    text-decoration: none;
+    align-self: stretch;
+    position: relative;
+    color: inherit;
 }
-.si-no-tienes-una-cuenta-regst-parent {
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 0.38rem;
-  font-size: 1rem;
-  color: #989999;
+
+.frame1,
+.frame1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-.frame-parent {
-  position: absolute;
-  width: 23.54%;
-  top: calc(50% - 120px);
-  right: 56.72%;
-  left: 19.74%;
-  height: 15rem;
-  align-items: flex-end;
-  gap: 3.31rem;
+
+.frame1-2 {
+    align-self: stretch;
+    align-items: flex-start;
+    gap: 0.38rem;
+    font-size: 1rem;
+    color: #989999;
 }
-.logo-combined-191a1e-2-icon,
-.sits-01-3-icon {
-  position: absolute;
-  top: 1.25rem;
-  width: 11.25rem;
-  object-fit: cover;
+
+.frame1 {
+    position: absolute;
+    width: 29.31%;
+    top: 24.5rem;
+    right: 52.92%;
+    left: 17.78%;
+    height: 15rem;
+    align-items: flex-end;
+    gap: 3.31rem;
 }
-.sits-01-3-icon {
-  right: 1.25rem;
-  height: 2.19rem;
+
+.logo-combined-191a1e-icon,
+.sits-01-icon {
+    position: absolute;
+    top: 1.75rem;
+    height: 2.25rem;
+    object-fit: cover;
 }
-.logo-combined-191a1e-2-icon {
-  left: 1.25rem;
-  height: 2.06rem;
+
+.sits-01-icon {
+    right: 10rem;
+    width: 11.56rem;
 }
-.inicia-sesin1 {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-size: 1.88rem;
-  font-weight: 500;
-  font-family: Poppins;
-  color: #fff;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  height: 3.19rem;
-  flex-shrink: 0;
+
+.logo-combined-191a1e-icon {
+    left: 10rem;
+    width: 12.25rem;
 }
-.group-child,
-.group-item {
-  border: 0;
-  outline: 0;
-  font-family: Poppins;
-  font-size: 0.94rem;
-  background-color: #32353c;
-  position: absolute;
-  height: 43.75%;
-  width: 100%;
-  top: 56.25%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 8px;
-  padding: 0 2.75rem;
-  box-sizing: border-box;
-  color: #fff;
+
+.login {
+    position: relative;
+    background-color: #191a1e;
+    width: 100%;
+    height: 64rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 3.13rem;
+    color: #fff;
+    font-family: Poppins;
 }
-.group-item {
-  top: 0;
-  bottom: 56.25%;
+
+/* Estilos para Tablet (991px) */
+@media screen and (max-width: 991px) {
+    .frame2-inicia-sesion {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-size: 1.88rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        height: 3.19rem;
+        flex-shrink: 0;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2 {
+        border: 0;
+        outline: 0;
+        font-family: Poppins;
+        font-size: 0.94rem;
+        background-color: #32353c;
+        position: absolute;
+        height: 43.75%;
+        width: 99.77%;
+        top: 56.25%;
+        right: 0;
+        bottom: 0;
+        left: 0.23%;
+        border-radius: 8px;
+        padding: 0 1.9rem;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .frame2-group1-1 {
+        top: 0;
+        right: 0.23%;
+        bottom: 56.25%;
+        left: 0;
+    }
+
+    .frame2-group1 {
+        align-self: stretch;
+        position: relative;
+        height: 10rem;
+    }
+
+    .frame2-group2-rectangle {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 9px;
+        background-color: #1a9fff;
+        box-shadow: 0 4px 61px transparent;
+    }
+
+    .frame2-group2-iniciar-sesion {
+        position: absolute;
+        height: 40.75%;
+        width: 28.73%;
+        top: 30.53%;
+        left: 35.76%;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frame2-group2 {
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        align-self: stretch;
+        position: relative;
+        height: 4.16rem;
+    }
+
+    .frame2 {
+        margin: 0;
+        position: absolute;
+        width: 39.05%;
+        top: 23.88rem;
+        right: 10.09%;
+        left: 50.86%;
+        height: 18.13rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.69rem;
+    }
+
+    .frame1-1-con-tu-nombre-de-usua,
+    .frame1-1-inicia-sesion {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-family: inherit;
+    }
+
+    .frame1-1-inicia-sesion {
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    .frame1-1-con-tu-nombre-de-usua {
+        font-size: 2.19rem;
+        font-weight: 500;
+    }
+
+    .frame1-1 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.31rem;
+    }
+
+    .frame1-2-si-no-tienes-una-cuen {
+        align-self: stretch;
+        position: relative;
+    }
+
+    .span {
+        color: #000;
+    }
+
+    .regstrarte-aqu {
+        font-weight: 600;
+        color: #1a9fff;
+    }
+
+    .frame1-2-puedes-registrarte-aq {
+        text-decoration: none;
+        align-self: stretch;
+        position: relative;
+        color: inherit;
+    }
+
+    .frame1,
+    .frame1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .frame1-2 {
+        align-self: stretch;
+        align-items: flex-start;
+        gap: 0.38rem;
+        font-size: 1rem;
+        color: #989999;
+    }
+
+    .frame1 {
+        position: absolute;
+        width: 32.29%;
+        top: 26.13rem;
+        right: 57.62%;
+        left: 10.09%;
+        height: 11.75rem;
+        align-items: flex-end;
+        gap: 3.31rem;
+    }
+
+    .logo-combined-191a1e-icon,
+    .sits-01-icon {
+        position: absolute;
+        top: 1.75rem;
+        height: 2.25rem;
+        object-fit: cover;
+    }
+
+    .sits-01-icon {
+        right: 2rem;
+        width: 11.56rem;
+    }
+
+    .logo-combined-191a1e-icon {
+        left: 2rem;
+        width: 12.25rem;
+    }
+
+    .login {
+        position: relative;
+        background-color: #191a1e;
+        width: 100%;
+        height: 64rem;
+        overflow: hidden;
+        text-align: left;
+        font-size: 3.13rem;
+        color: #fff;
+        font-family: Poppins;
+    }
+
 }
-.group-parent,
-.has-olvidado-tu {
-  align-self: stretch;
-  position: relative;
-  height: 10rem;
-}
-.has-olvidado-tu {
-  font-size: 0.81rem;
-  font-family: Poppins;
-  color: #989999;
-  text-align: right;
-  display: inline-block;
-  height: 1.44rem;
-  flex-shrink: 0;
-}
-.group-inner {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 9px;
-  background-color: #1a9fff;
-  box-shadow: 0 4px 61px transparent;
-}
-.registrarse {
-  position: absolute;
-  height: 40.75%;
-  width: 28.73%;
-  top: 30.53%;
-  left: 35.76%;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: Poppins;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rectangle-parent {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  align-self: stretch;
-  position: relative;
-  height: 4.16rem;
-}
-.inicia-sesin-group {
-  margin: 0;
-  position: absolute;
-  width: 21.82%;
-  top: calc(50% - 191px);
-  right: 20.88%;
-  left: 57.29%;
-  height: 23.88rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.69rem;
-}
-.locofylogin {
-  position: relative;
-  background-color: #191a1e;
-  width: 100%;
-  height: 90rem;
-  overflow: hidden;
-  text-align: left;
-  font-size: 3.13rem;
-  color: #fff;
-  font-family: Poppins;
+
+/* Estilos para Mobile (478px) */
+@media screen and (max-width: 478px) {
+    .frame2-inicia-sesion {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-size: 1.88rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        height: 3.19rem;
+        flex-shrink: 0;
+    }
+
+    .frame2-group1-1,
+    .frame2-group1-2 {
+        border: 0;
+        outline: 0;
+        font-family: Poppins;
+        font-size: 0.94rem;
+        background-color: #32353c;
+        position: absolute;
+        height: 43.75%;
+        width: 99.77%;
+        top: 56.25%;
+        right: 0;
+        bottom: 0;
+        left: 0.23%;
+        border-radius: 8px;
+        padding: 0 1.91rem;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .frame2-group1-1 {
+        top: 0;
+        right: 0.23%;
+        bottom: 56.25%;
+        left: 0;
+    }
+
+    .frame2-group1 {
+        align-self: stretch;
+        position: relative;
+        height: 10rem;
+    }
+
+    .frame2-group2-rectangle {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 9px;
+        background-color: #1a9fff;
+        box-shadow: 0 4px 61px transparent;
+    }
+
+    .frame2-group2-iniciar-sesion {
+        position: absolute;
+        height: 40.75%;
+        width: 28.74%;
+        top: 30.53%;
+        left: 35.77%;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frame2-group2 {
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        align-self: stretch;
+        position: relative;
+        height: 4.16rem;
+    }
+
+    .frame2 {
+        margin: 0;
+        position: absolute;
+        width: 81.17%;
+        top: 31.63rem;
+        right: 9.41%;
+        left: 9.41%;
+        height: 18.19rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.69rem;
+    }
+
+    .frame1-1-con-tu-nombre-de-usua,
+    .frame1-1-inicia-sesion {
+        margin: 0;
+        align-self: stretch;
+        position: relative;
+        font-family: inherit;
+    }
+
+    .frame1-1-inicia-sesion {
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    .frame1-1-con-tu-nombre-de-usua {
+        font-size: 2.19rem;
+        font-weight: 500;
+    }
+
+    .frame1-1 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.31rem;
+    }
+
+    .frame1-2-si-no-tienes-una-cuen {
+        align-self: stretch;
+        position: relative;
+    }
+
+    .span {
+        color: #000;
+    }
+
+    .regstrarte-aqu {
+        font-weight: 600;
+        color: #1a9fff;
+    }
+
+    .frame1-2-puedes-registrarte-aq {
+        text-decoration: none;
+        align-self: stretch;
+        position: relative;
+        color: inherit;
+    }
+
+    .frame1,
+    .frame1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .frame1-2 {
+        align-self: stretch;
+        align-items: flex-start;
+        gap: 0.38rem;
+        font-size: 1rem;
+        color: #989999;
+    }
+
+    .frame1 {
+        position: absolute;
+        width: 81.17%;
+        top: 7.69rem;
+        right: 9.41%;
+        left: 9.41%;
+        height: 13.81rem;
+        align-items: flex-end;
+        gap: 3.31rem;
+    }
+
+    .logo-combined-191a1e-icon,
+    .sits-01-icon {
+        position: absolute;
+        top: 1.75rem;
+        height: 2.25rem;
+        object-fit: cover;
+    }
+
+    .sits-01-icon {
+        right: 1rem;
+        width: 11.56rem;
+    }
+
+    .logo-combined-191a1e-icon {
+        left: 1rem;
+        width: 12.25rem;
+    }
+
+    .login {
+        position: relative;
+        background-color: #191a1e;
+        width: 100%;
+        height: 64rem;
+        overflow: hidden;
+        text-align: center;
+        font-size: 3.13rem;
+        color: #fff;
+        font-family: Poppins;
+    }
 }

@@ -36,48 +36,45 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="locofylogin">
-      <div className="frame-parent">
-        <div className="inicia-sesin-parent">
-          <h1 className="inicia-sesin">Inicia sesión</h1>
-          <h1 className="con-tu-correo">con tu correo electrónico</h1>
+    <div className="login">
+      <img className="sits-01-icon" alt="" src="/sits-01@2x.png" />
+      <img
+        className="logo-combined-191a1e-icon"
+        alt=""
+        src="/logo-combined-191a1e@2x.png"
+      />
+
+      <div className="frame1">
+        <div className="frame1-1">
+          <h1 className="frame1-1-inicia-sesion">Inicia sesión</h1>
+          <h1 className="frame1-1-con-tu-nombre-de-usua">
+            con tu nombre de usuario
+          </h1>
         </div>
-        <div className="si-no-tienes-una-cuenta-regst-parent">
-          <div className="si-no-tienes">Si no tienes una cuenta regístrate</div>
-          <div className="si-no-tienes">
+        <div className="frame1-2">
+          <div className="frame1-2-si-no-tienes-una-cuen">
+            Si no tienes una cuenta regístrate
+          </div>
+          <a className="frame1-2-puedes-registrarte-aq">
             <span>
               <span>¡Puedes</span>
               <span className="span">{` `}</span>
             </span>
             <span className="regstrarte-aqu">regístrarte aquí!</span>
-          </div>
+          </a>
         </div>
       </div>
-      <img className="sits-01-3-icon" alt="" src="/sits-01-3@2x.png" />
-      <img
-        className="logo-combined-191a1e-2-icon"
-        alt=""
-        src="/logo-combined-191a1e-2@2x.png"
-      />
 
       {/* Formulario de inicio de sesión */}
-      <form onSubmit={handleSubmit} className="inicia-sesin-group">
-        <h1 className="inicia-sesin1">Inicia sesión</h1>
-        <div className="group-parent">
-          {/* Campos de formulario */}
+      <form onSubmit={handleSubmit} className="frame2">
+        <h1 className="frame2-inicia-sesion">Inicia sesión</h1>
+        <div className="frame2-group1">
           <input
-            className="group-item"
+            className="frame2-group1-1"
             placeholder="Nombre de usuario"
             type="text"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
-          />
-          <input
-            className="group-child"
-            placeholder="Contraseña"
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
           />
           {/*<input
             className="group-item"
@@ -86,11 +83,17 @@ const LoginPage = () => {
             value={groupInput1Value}
             onChange={(event) => setGroupInput1Value(event.target.value)}
 />*/}
+          <input
+            className="frame2-group1-2"
+            placeholder="Contraseña"
+            type="password"
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+          />
         </div>
-        <div className="has-olvidado-tu">¿Has olvidado tu contraseña?</div>
-        <button className="rectangle-parent">
-          <div className="group-inner" />
-          <div className="registrarse">Iniciar sesión</div>
+        <button className="frame2-group2">
+          <div className="frame2-group2-rectangle" />
+          <div className="frame2-group2-iniciar-sesion">Iniciar sesión</div>
         </button>
         {/* Mensajes de error o éxito */}
         {errorMessage && <div className="error-message">{errorMessage}</div>}

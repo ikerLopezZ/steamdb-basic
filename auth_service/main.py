@@ -13,16 +13,22 @@ import uvicorn
 
 from .src import auth, database, models, schemas
 
-app = FastAPI()
+def create_app():
+    app = FastAPI()
+    configure_cors(app)
+    return app
 
 # Configura CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Permite solicitudes desde el origen del frontend
-    allow_credentials=True,
-    allow_methods=["*"],  # Permite todos los métodos HTTP
-    allow_headers=["*"],  # Permite todos los encabezados
-)
+def configure_cors(app):
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["http://localhost:3000"], # Permite solicitudes desde el origen del frontend
+        allow_credentials=True,
+        allow_methods=["*"], # Permite todos los métodos HTTP
+        allow_headers=["*"], # Permite todos los encabezados
+    )
+
+app = create_app()
 
 # Crear las tablas en la base de datos
 models.Base.metadata.create_all(bind=database.engine)

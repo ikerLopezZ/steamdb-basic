@@ -2,9 +2,9 @@ import os
 from datetime import datetime, timedelta
 from typing import Optional
 
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends
 from fastapi.security import OAuth2PasswordBearer
-from jose import JWTError, jwt
+from jose import jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
@@ -12,6 +12,8 @@ from . import models
 
 # Clave secreta y algoritmo para JWT
 SECRET_KEY = os.environ.get("SECRET_KEY")
+if not SECRET_KEY:
+    raise RuntimeError("La SECRET_KEY no está definida en las variables de entorno")
 ALGORITHM = "HS256"
 
 # Utilidades para hash y verificación de contraseñas
