@@ -7,36 +7,33 @@ const app = express();
 
 // Configuración de CORS (Cross-Origin Resource Sharing)
 app.use(
-  cors({
-    origin: "http://localhost:3000", // Permite solicitudes desde el frontend
-    credentials: true,
-  })
+  cors({})
 );
 
 // Documentación y OpenAPI
 app.use(
   "/docs",
-  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+  createProxyMiddleware({ target: "http://auth_service:8000", changeOrigin: true })
 );
 app.use(
   "/openapi.json",
-  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+  createProxyMiddleware({ target: "http://auth_service:8000", changeOrigin: true })
 );
 
 // Enrutamiento para el microservicio steam-app-info-service
 app.use(
   "/apps",
-  createProxyMiddleware({ target: "http://localhost:5000", changeOrigin: true })
+  createProxyMiddleware({ target: "http://steam-app-info-service:5000", changeOrigin: true })
 );
 
 // Enrutamiento para el microservicio auth_service
 app.use(
   "/register",
-  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+  createProxyMiddleware({ target: "http://auth_service:8000", changeOrigin: true })
 );
 app.use(
   "/login",
-  createProxyMiddleware({ target: "http://localhost:8000", changeOrigin: true })
+  createProxyMiddleware({ target: "http://auth_service:8000", changeOrigin: true })
 );
 
 // Middleware de manejo de errores

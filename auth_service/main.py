@@ -11,7 +11,7 @@ from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-from .src import auth, database, models, schemas
+from src import auth, database, models, schemas
 
 def create_app():
     app = FastAPI()
@@ -22,7 +22,7 @@ def create_app():
 def configure_cors(app):
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:3000"], # Permite solicitudes desde el origen del frontend
+        allow_origins=["*"], # Permite solicitudes desde el origen del frontend
         allow_credentials=True,
         allow_methods=["*"], # Permite todos los métodos HTTP
         allow_headers=["*"], # Permite todos los encabezados
@@ -73,5 +73,5 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
 # Ejecución de la aplicación con Uvicorn
 if __name__ == "__main__":
     PORT = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="127.0.0.1", port=PORT, reload=False)
+    uvicorn.run(app, host="auth_service", port=PORT, reload=False)
     

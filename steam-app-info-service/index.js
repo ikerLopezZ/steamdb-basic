@@ -18,9 +18,7 @@ app.use(express.json());
 
 // Configuración de CORS
 app.use(
-  cors({
-    origin: "http://localhost:3000", // Asegúrate de permitir solicitudes desde el origen de tu frontend
-  })
+  cors({})
 );
 
 // Establecer la conexión a la base de datos

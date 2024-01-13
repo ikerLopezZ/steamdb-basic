@@ -1,6 +1,6 @@
 # SteamDB Basic
 
-SteamDB Basic es una aplicación web que proporciona información detallada sobre las 100 aplicaciones más valoradas en Steam para el año 2023. Utiliza una arquitectura de microservicios con JavaScript y Express.js para el API Gateway y el servicio de información de Steam, mientras que el servicio de autenticación está desarrollado en Python con FastAPI.
+SteamDB Basic es una aplicación web que proporciona información básica sobre las 100 aplicaciones mejor valoradas en Steam del año 2023. Utiliza una arquitectura de microservicios con JavaScript y Express.js para el API Gateway y el servicio de información de Steam, mientras que el servicio de autenticación está desarrollado en Python con FastAPI.
 
 La aplicación maneja las bases de datos utilizando MySQL y MongoDB, y el frontend está construido en React, ofreciendo una interfaz clara y fácil de usar para acceder y visualizar la información.
 
