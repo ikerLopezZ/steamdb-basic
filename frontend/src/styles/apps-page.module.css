@@ -1,0 +1,155 @@
+.dbc71957312bbd3baea65848b545beIcon {
+  position: relative;
+  border-radius: 6px;
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: cover;
+}
+.frame21Text {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  height: 2.25rem;
+}
+.frame21 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.63rem;
+}
+.header2Icon {
+  align-self: stretch;
+  position: relative;
+  border-radius: 8px;
+  max-height: 100%;
+  width: 16rem;
+  object-fit: cover;
+}
+.frame22111Text {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+}
+.frame2211,
+.frame22111 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 8px;
+  display: flex;
+}
+.frame22111 {
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.63rem;
+}
+.frame2211 {
+  background-color: #32353c;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame22141Text1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+}
+.frame2214,
+.frame22141 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+}
+.frame22141 {
+  border-radius: 8px;
+  background-color: #1a9fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.63rem;
+}
+.frame2214 {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.63rem;
+  font-size: 1.25rem;
+}
+.frame221 {
+  flex: 1;
+  height: 7.5rem;
+  flex-direction: row;
+}
+.frame2,
+.frame22,
+.frame221 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.63rem;
+}
+.frame22 {
+  align-self: stretch;
+  flex-direction: row;
+  text-align: center;
+  font-size: 1rem;
+}
+.frame2 {
+  margin: 0 auto;
+  width: 77.78%;
+  top: 12.31rem;
+  right: 11.11%;
+  left: 11.11%;
+  height: 11.63rem;
+  flex-direction: column;
+  padding: 0.63rem 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+.logoCombined191a1eIcon,
+.sits01Icon {
+  position: relative;
+  width: 12.25rem;
+  height: 2.25rem;
+  object-fit: cover;
+}
+.sits01Icon {
+  width: 11.91rem;
+}
+.frame1 {
+  position: absolute;
+  width: 77.78%;
+  top: 1.75rem;
+  right: 11.11%;
+  left: 11.11%;
+  height: 2.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.Apps {
+  position: relative;
+  background-color: #191a1e;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: 2rem;
+  color: #fff;
+  font-family: Poppins;
+}
