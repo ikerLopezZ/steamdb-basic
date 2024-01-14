@@ -1,3 +1,4 @@
+
 # SteamDB Basic
 
 SteamDB Basic es una aplicación web que proporciona información básica sobre las 100 aplicaciones mejor valoradas en Steam del año 2023. Utiliza una arquitectura de microservicios con JavaScript y Express.js para el API Gateway y el servicio de información de Steam, mientras que el servicio de autenticación está desarrollado en Python con FastAPI.
@@ -27,70 +28,73 @@ Antes de ejecutar los microservicios, es necesario instalar sus dependencias. De
 
 ### API Gateway (Node.js)
 
-#### En la carpeta `api-gateway`
+En la carpeta `api-gateway`
 
 ```bash
 cd api-gateway
 ```
 
-##### Instalar dependencias
+Instalar dependencias
+
 ```bash
 npm install
 ```
 
 ### Servicio de Obtención de Datos de Steam (Node.js)
 
-#### En la carpeta `steam-app-info-service`
+En la carpeta `steam-app-info-service`
 
 ```bash
 cd steam-app-info-service
 ```
 
-##### Instalar dependencias
+Instalar dependencias
+
 ```bash
 npm install
 ```
 
 ### Servicio de Autenticación (Python)
 
-#### En la carpeta `auth_service`
+En la carpeta `auth_service`
 
 ```bash
 cd auth_service
 ```
 
-##### Activar entorno virtual
+Activar entorno virtual
 
 ```bash
 # Windows
 env\Scripts\activate
-```
 
-```bash
 # Unix o MacOS
 source env/bin/activate
 ```
 
-##### Instalar dependencias
+Instalar dependencias
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Frontend (React)
 
-#### En la carpeta `frontend`
+En la carpeta `frontend`
 
 ```bash
 cd frontend
 ```
 
-##### Instalar dependencias
+Instalar dependencias
+
 ```bash
 npm install
 ```
 
 ## Ejecución de Servicios
-Para iniciar cada servicio del proyecto, desde el directorio raíz del proyecto (`steamdb-basic`), se deben seguir estos pasos:
+
+Para iniciar cada servicio del proyecto, se deben seguir estos pasos desde el directorio raíz del proyecto (`steamdb-basic`). Asegurarse de ejecutar cada servicio en una terminal diferente o de gestionar la ejecución simultánea de manera adecuada.
 
 #### API Gateway
 
@@ -118,7 +122,7 @@ node index.js
 cd auth_service
 ```
 
-##### Activar entorno virtual (si no lo está ya)
+Activar entorno virtual (si no lo está ya)
 
 ```bash
 # Windows
@@ -188,6 +192,12 @@ Asegurarse de tener instalado Docker y Docker Compose en el sistema. Se pueden d
 
     Este comando construirá imágenes Docker para cada servicio (si es necesario) y luego iniciará los contenedores.
 
+    Si se quiere construir las imágenes y ejecutar los contenedores en el fondo (modo detached), se puede añadir la opción `-d` al comando `docker-compose up --build -d`.
+
+    ```bash
+    docker-compose up --build -d
+    ```
+
 2. **Acceder a los Servicios**: Una vez que los servicios están en ejecución, es posible acceder a ellos a través de las siguientes URLs:
 
    - API Gateway: `http://localhost:8080`
@@ -195,13 +205,41 @@ Asegurarse de tener instalado Docker y Docker Compose en el sistema. Se pueden d
    - Servicio de Autenticación: `http://localhost:8000`
    - Frontend: `http://localhost:3000`
 
-3. **Detener los Servicios**: Para detener los servicios, se puede utilizar `Ctrl+C` en la terminal donde se están ejecutando. Si se quiere detener y eliminar los contenedores, redes, volúmenes y imágenes creadas por `docker-compose up`, utilizar:
+2. **Acceder a la Documentación**: También es posible acceder a la documentación interactiva del servicio de autenticación través de la siguiente URL:
+
+   - Swagger UI: `http://localhost:8080/docs`
+
+3. **Detener los Servicios**: Para detener los servicios, se puede utilizar el siguiente comando:
+
+    ```bash
+    docker-compose stop
+    ```
+
+    Para detener y eliminar los contenedores y las redes creadas, utilizar:
 
     ```bash
     docker-compose down
     ```
 
-4. **Uso en Modo Detached**: Si se quiere ejecutar los contenedores en el fondo (modo detached), se puede añadir la opción `-d` al comando `docker-compose up`.
+    Para eliminar también los volúmenes, usar:
+
+    ```bash
+    docker-compose down --volumes
+    ```
+
+    Y para eliminar las imágenes creadas, usar:
+
+    ```bash
+    docker-compose down --rmi all
+    ```
+
+    o
+
+    ```bash
+    docker-compose down --rmi local
+    ```
+
+4. **Uso en Modo Detached**: Si se quiere ejecutar los contenedores en el fondo, también se puede añadir la opción `-d` al comando `docker-compose up`.
 
     ```bash
     docker-compose up -d
