@@ -198,11 +198,8 @@ Asegurarse de tener instalado Docker y Docker Compose en el sistema. Se pueden d
     docker-compose up --build -d
     ```
 
-2. **Acceder a los Servicios**: Una vez que los servicios están en ejecución, es posible acceder a ellos a través de las siguientes URLs:
+2. **Acceder a los Servicios**: Una vez que los servicios están en ejecución, es posible acceder al frontend a través de la siguiente URL:
 
-   - API Gateway: `http://localhost:8080`
-   - Steam App Info Service: `http://localhost:5000`
-   - Servicio de Autenticación: `http://localhost:8000`
    - Frontend: `http://localhost:3000`
 
 2. **Acceder a la Documentación**: También es posible acceder a la documentación interactiva del servicio de autenticación través de la siguiente URL:
